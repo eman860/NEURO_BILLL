@@ -1,0 +1,12 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/.env
+backend/neurabills.db
+backend/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
