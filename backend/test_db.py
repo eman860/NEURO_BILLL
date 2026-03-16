@@ -3,6 +3,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.exc import OperationalError
 from database import Base
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/neurabills")
 
 try:
