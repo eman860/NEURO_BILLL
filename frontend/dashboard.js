@@ -55,27 +55,15 @@ async function renderDashboard() {
       </div>
 
       <div class="dashboard-layout">
-        <div class="card">
-          <div class="card-header"><div class="card-title">Weekly Progress <span style="font-weight:400;color:var(--text-muted);font-size:0.85rem">(from Database)</span></div></div>
-          <div class="card-body" style="display:flex;align-items:center;justify-content:center;min-height:300px">
-             <!-- Chart graphic exactly imitating screenshot -->
-             <div style="width:100%;height:100%;border-left:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;position:relative;margin-top:20px;margin-left:20px;margin-bottom:20px">
-                <div style="position:absolute;left:-25px;top:0;font-size:0.7rem;color:#94a3b8">100</div>
-                <div style="position:absolute;left:-20px;bottom:50%;font-size:0.7rem;color:#94a3b8">50</div>
-                <div style="position:absolute;left:-20px;bottom:25%;font-size:0.7rem;color:#94a3b8">25</div>
-                <div style="position:absolute;left:-15px;bottom:-5px;font-size:0.7rem;color:#94a3b8">0</div>
-                
-                <!-- grid lines horizontal -->
-                <div style="position:absolute;left:0;top:0;width:100%;border-top:1px dashed #e2e8f0"></div>
-                <div style="position:absolute;left:0;top:50%;width:100%;border-top:1px dashed #e2e8f0"></div>
-                <div style="position:absolute;left:0;top:75%;width:100%;border-top:1px dashed #e2e8f0"></div>
-                
-                <!-- dot -->
-                <div style="position:absolute;left:50%;top:10%;width:10px;height:10px;background:var(--brand);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 4px rgba(37,99,235,0.2)"></div>
-                
-                <!-- x-axis label -->
-                <div style="position:absolute;left:50%;bottom:-25px;font-size:0.7rem;color:#94a3b8;transform:translateX(-50%)">Fri</div>
-             </div>
+        <div class="card" style="overflow: hidden; display: flex; align-items: center; background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%); border: none; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);">
+          <div class="card-body" style="display: flex; align-items: center; gap: 2rem; padding: 2.5rem;">
+            <div style="flex: 1;">
+              <h2 style="font-size: 1.75rem; color: #1e293b; margin-bottom: 1rem; font-weight: 800;">Scale Your Business <span style="color: var(--brand);">Effortlessly</span></h2>
+              <p style="color: #64748b; line-height: 1.6; font-size: 1.05rem; margin-bottom: 0;">NeuraBills is tracking your growth in real-time. Boost your productivity by managing invoices and customers from one premium dashboard.</p>
+            </div>
+            <div style="flex: 1; display: flex; justify-content: flex-end;">
+              <img src="./dashboard_hero.png" alt="Business Growth" style="max-width: 280px; height: auto; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); transform: perspective(1000px) rotateY(-10deg) rotateX(5deg); transition: transform 0.5s ease;" onmouseover="this.style.transform='perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.05)'" onmouseout="this.style.transform='perspective(1000px) rotateY(-10deg) rotateX(5deg) scale(1)'">
+            </div>
           </div>
         </div>
         
